@@ -1,0 +1,112 @@
+package gestao;
+
+import gestao.alunoges.Aluno;
+
+public class academico {
+
+	public static void main(String[] args) {
+		
+	Aluno aluno1 = new Aluno("Carlos antony","134.975.498.58",
+			"carlosantony@gmail.com","Informática","20191ipibj0172");
+		Aluno aluno2 = new Aluno("gustavo coelho","798.456.381.29",
+	"gustavinho@outlook.com","agroindrústia","20211ipibj0995");
+		
+	System.out.println("ALUNO: Carlos"+"\n\nNOME: "+aluno1.nome+"\nCPF: "
+			+aluno1.cpf+"\nEMAIL: "+aluno1.email+"\nCURSO: "+aluno1.curso+
+			"\nMATRÍCULA: "+aluno1.matricula+"\n\nO Aluno: Carlos Eduardo está matrículado"	+ " no curso de Informática,\nseu horario de aula é das "+Aluno.HORARIOAULAS+	" ,e ele foi contemplado \ncom o auxilio eventual no valor de "+Aluno.auxilioeventual+	" reais!");
+		
+	System.out.println("\nALUNO: Marcos"+"\n\nNOME: "+aluno2.nome+"\nCPF: "
+			+aluno2.cpf+"\nEMAIL: "+aluno2.email+"\nCURSO: "+aluno2.curso+ "\nMATRÍCULA: "+aluno2.matricula+"\n\nO Aluno: Marcos Felipe está matrículado" + " no curso de Enfermagem,\nseu horario de aula é das "+Aluno.HORARIOAULAS+" ,e ele foi contemplado \ncom o programa bolsa permanencia no valor de "+Aluno.auxilioeventual+ " reais!");
+	}
+}
+
+
+
+package gestao;
+
+public class alunoges {
+	public static class Aluno {
+	String nome;
+	String cpf;
+	String email;
+	String curso;
+	String matricula;
+		
+	static String HORARIOAULAS = "19:00 às 22:00";
+	static int auxilioeventual = 150;
+		
+	public Aluno(String NOME,String CPF,String EMAIL,String CURSO,String MATRICULA) {
+			
+	this.nome = NOME;
+	this.cpf = CPF;
+	this.email = EMAIL;
+	this.curso = CURSO;
+	this.matricula = MATRICULA;		
+}
+		
+public Aluno() {
+		
+}
+		
+}
+}
+
+
+
+
+
+
+
+
+
+
+package projeto_ifpe;
+
+public class ifpepro {
+	String nome;
+	String cpf;
+	byte idade;
+	char sexo;
+	char tiposangue;
+	char fatorrh;
+	String endereco;
+	public  ifpepro(String nome, String cpf, char sexo, char tiposangue, char fatorrh,
+	String endereco)
+	{
+	this.nome=nome;
+	this.cpf=cpf;
+	this.idade=(byte)idade;
+	this.sexo=sexo;
+	this.tiposangue=tiposangue;
+	this.fatorrh=fatorrh;
+	this.endereco=endereco;
+}
+}
+
+
+package projeto_ifpe;
+
+public class Paciente {
+
+	private static final char[] endereco = null;
+	private static Paciente paciente1;
+
+	public Paciente(String string, String string2, char c, char d, char e, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+	setPaciente1(new Paciente("carlos antony", "66666" , 'M', 'b', '-' , "Rua 7,22"));
+	{
+	System.out.println(Paciente.endereco);
+	}
+	}
+
+	public static Paciente getPaciente1() {
+		return paciente1;
+	}
+
+	public static void setPaciente1(Paciente paciente1) {
+		Paciente.paciente1 = paciente1;
+	}
+}
